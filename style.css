@@ -1,0 +1,43 @@
+.title { /*the div "title" is only applied to h1*/
+    color: #EE82EE; /*font color*/
+    font-family: cursive; 
+    font-size: 20pt; 
+    text-align: center; /*makes the title in the center*/
+    text-decoration: underline; /*underlines the title*/
+}
+
+body {
+    background: linear-gradient(to right, lightcyan, lightskyblue); /*makes the background to have a gradient*/
+}
+
+#intro { /*the id name for the paragraph*/
+    color: #483D8B; /*sets the paragraph font color*/
+    font-family: fantasy;
+    font-size: 20pt;
+    border-image: url(BORDER.png) 50 round; /*repeating the border image to fit in the id container*/
+    text-shadow: 2px 2px deepskyblue; /*adding a shadow to the text*/
+    transform: skewX(10deg); /*positiopning the container on a 20 degree angle*/
+    animation-name: change; /*creating the animation named change*/
+    animation-duration: 3s; /*having the animation cycle last 3s*/
+    animation-iteration-count: infinite; /*repeating the animation forever*/
+}
+
+@keyframes change { /*changing the style in intro*/ /*change is the animation name*/
+    from {background-color: thistle;} /*starts with background color "thistle"*/
+    to {background-color: mediumorchid;} /*gradually changing the background to "medium orchid"*/
+}
+
+#sunset { /*id name for the image*/
+    width: 500px; 
+    height:250px;
+    /*setting the size of the image*/
+    border-style:solid; /*having a solid border*/
+    border-color:blueviolet; /*color of border*/
+    transition: width 1s, height 2s; /*duration to change the image size*/
+}
+
+#sunset:hover { /*image id name and if user hovers over the image, it will change size*/
+    width: 600px;
+    height: 300px;
+    /*changes the size of the image if you hover over the image*/
+}
